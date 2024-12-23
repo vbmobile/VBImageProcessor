@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "VBImageProcessor",
     platforms: [
-        .iOS(.v10)
+        .iOS(.v12)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
@@ -14,11 +14,23 @@ let package = Package(
             name: "VBImageProcessor",
             targets: ["VBImageProcessor"]),
     ],
+    dependencies: [
+        .package(name: "VBUtils", url: "https://github.com/vbmobile/VBUtils", .exact("1.0.0")),
+    ],
     targets: [
         .binaryTarget(
             name: "VBImageProcessor",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/MobileIdSDKiOS/VBImageProcessor/VBImageProcessor-1.1.2.zip",
-            checksum: "52da534e5294759a95be7cec9294f7d93aaff7e6f7f9ea6000b8410bfe801e2f"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/MobileIdSDKiOS/VBImageProcessor/VBImageProcessor-1.1.3.zip",
+            checksum: "5c4cdd2b25503c0765b128320eaca388cb3ca2e37f3bf8ff8e5f8517daa28dfc"
+        ),
+        .target(
+            name: "VBImageProcessorWrapper",
+            dependencies: [
+                .target(name: "VBImageProcessor"),
+                .product(name: "VBUtils", package: "VBUtils")
+            ],
+            path: "Sources",
+            sources: ["dummy.swift"]
         )
     ],
     swiftLanguageVersions: [.v5]
