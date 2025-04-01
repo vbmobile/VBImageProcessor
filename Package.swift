@@ -12,10 +12,10 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "VBImageProcessor",
-            targets: ["VBImageProcessor"]),
+            targets: ["VBImageProcessorWrapper"]),
     ],
     dependencies: [
-        .package(name: "VBUtils", url: "https://github.com/vbmobile/VBUtils", .exact("2.0.0")),
+        .package(url: "https://github.com/vbmobile/VBUtils", .exact("2.0.0")),
     ],
     targets: [
         .binaryTarget(
