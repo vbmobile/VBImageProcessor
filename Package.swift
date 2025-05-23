@@ -12,17 +12,16 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "VBImageProcessor",
-            type: .dynamic,
             targets: ["VBImageProcessorWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/vbmobile/VBUtils", .exact("2.0.0")),
+        .package(url: "https://github.com/vbmobile/VBUtils", .exact("2.0.1")),
     ],
     targets: [
         .binaryTarget(
             name: "VBImageProcessor",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/MobileIdSDKiOS/VBImageProcessor/VBImageProcessor-1.2.0.zip",
-            checksum: "49bbb3aaffb6dda60992e484b7a4b868eb227c90f73ce39f59152ece7494ace7"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/MobileIdSDKiOS/VBImageProcessor/VBImageProcessor-1.2.1.zip",
+            checksum: "302e75aa58a7247fcbf140fbaaa71fa8763451e710d0d07ca9204aa8ff6e71cf"
         ),
         .target(
             name: "VBImageProcessorWrapper",
