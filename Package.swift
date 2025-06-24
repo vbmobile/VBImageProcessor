@@ -15,13 +15,13 @@ let package = Package(
             targets: ["VBImageProcessorWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/vbmobile/VBUtils", .exact("2.0.1")),
+        .package(url: "https://github.com/vbmobile/VBUtils", .exact("2.0.2")),
     ],
     targets: [
         .binaryTarget(
             name: "VBImageProcessor",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/MobileIdSDKiOS/VBImageProcessor/VBImageProcessor-1.2.1.zip",
-            checksum: "302e75aa58a7247fcbf140fbaaa71fa8763451e710d0d07ca9204aa8ff6e71cf"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/MobileIdSDKiOS/VBImageProcessor/VBImageProcessor-1.2.2.zip",
+            checksum: "1a7f793ea16c0511f898f3561ae102d6d9c696fa4478a6f2ee424d1bdf7a8bf5"
         ),
         .target(
             name: "VBImageProcessorWrapper",
