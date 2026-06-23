@@ -1,24 +1,21 @@
 // swift-tools-version: 5.10
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
 import PackageDescription
 
 let package = Package(
-    name: "VBImageProcessor",
+    name: "AMAImageProcessor",
     platforms: [
-        .iOS(.v10)
+        .iOS(.v15)
     ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "VBImageProcessor",
-            targets: ["VBImageProcessor"]),
+            name: "AMAImageProcessor",
+            targets: ["AMAImageProcessor"]),
     ],
     targets: [
         .binaryTarget(
-            name: "VBImageProcessor",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/MobileIdSDKiOS/VBImageProcessor/VBImageProcessor-1.1.4.zip",
-            checksum: "028a4d687d03d4c8162b1f45b7a6167a0676fc12705e3f10c6b6197684a97abf"
+            name: "AMAImageProcessor",
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMAImageProcessor/AMAImageProcessor-2.0.0.zip",
+            checksum: "1358301244bd23270c83f32ce3de0a286fea4cef71ed4d69745cdbf32779de6b"
         )
     ],
     swiftLanguageVersions: [.v5]
