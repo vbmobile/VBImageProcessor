@@ -12,13 +12,13 @@ let package = Package(
             targets: ["AMAImageProcessorWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/vbmobile/VBUtils", exact: "3.0.2"),
+        .package(url: "https://github.com/vbmobile/VBUtils", exact: "3.0.3"),
     ],
     targets: [
         .binaryTarget(
             name: "AMAImageProcessor",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMAImageProcessor/AMAImageProcessor-2.0.1.zip",
-            checksum: "8e80ffef7c332cc3206ee9637455fe9b99cfd7d2be48dbc5c26a78b046e980b7"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMAImageProcessor/AMAImageProcessor-2.0.2.zip",
+            checksum: "55c453d3141cc673fd2257f9ab240880f4807fcb1e3963170e0730fb0e00394b"
         ),
         .target(
             name: "AMAImageProcessorWrapper",
