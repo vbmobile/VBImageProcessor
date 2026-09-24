@@ -15,7 +15,7 @@ let package = Package(
             targets: ["VBImageProcessorWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/vbmobile/VBUtils", .exact("2.0.2")),
+        .package(url: "https://github.com/vbmobile/VBUtils", .exact("2.0.3")),
     ],
     targets: [
         .binaryTarget(
