@@ -20,8 +20,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "VBImageProcessor",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/MobileIdSDKiOS/VBImageProcessor/VBImageProcessor-1.2.2.zip",
-            checksum: "1a7f793ea16c0511f898f3561ae102d6d9c696fa4478a6f2ee424d1bdf7a8bf5"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/MobileIdSDKiOS/VBImageProcessor/VBImageProcessor-1.2.4.zip",
+            checksum: "3f457c45a3a83a60fc4cd99aee935bd2a4a46dff99a2b16e292515353b2dde82"
         ),
         .target(
             name: "VBImageProcessorWrapper",
